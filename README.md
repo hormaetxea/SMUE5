@@ -1,10 +1,7 @@
 # SMUE5
-Since this is gaining some traction on Twitter, I've decided to write this readme to explain what's going on and what needs to be done.
-And especially since I did this as an experiment for myself to make a plugin that works with a 3rd party library, I don't really have any intentions to finish it.
+This fork is a continuation of [Vivi](https://github.com/TheEnbyWitch/)'s work to put [libsm64](https://github.com/libsm64/libsm64) into Unreal Engine 5. This is a little side project I'm doing for fun and I have no serious expectation of finishing it (matter of fact I may forget about it in a week).
 
-Feel free to fork it and improve it though!
-
-TL;DR this is a very simple experiment that aimed to put [libsm64](https://github.com/libsm64/libsm64) into Unreal Engine 5.
+My current plans are to update the [libsm64](https://github.com/libsm64/libsm64) library of the project to the most recent version, implement audio and try to implement collisions.
 
 ## Features as they are right now
  - Mario's atlas texture is made into a UTexture2D that can be referenced by a material.
@@ -30,5 +27,5 @@ Content folder of the project (`/Content/`). It also needs to be named `sm64.z64
 No.
 
 ## Credits
-- Me (Vivi aka TheEnbyWitch or ViviTheEnbyWitch) - Putting it in Unreal for fun.
+- [Vivi aka TheEnbyWitch or ViviTheEnbyWitch](https://github.com/TheEnbyWitch/) - Putting it in Unreal for fun.
 - [libsm64](https://github.com/libsm64/libsm64) - For actually drawing the rest of the owl. (aka putting the mario movement into a library that can be used anywhere)

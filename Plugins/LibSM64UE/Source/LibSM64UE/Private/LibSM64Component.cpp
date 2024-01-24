@@ -29,7 +29,8 @@ void ULibSM64Component::SM64_GlobalInit(FString PathToRom)
 	FString Target = FPaths::ProjectContentDir() / PathToRom;
 	
 	FFileHelper::LoadFileToArray(RomData, *Target);
-	sm64_global_init(RomData.GetData(),  TextureData.GetData(), libsm64DebugPrint);
+	sm64_register_debug_print_function(libsm64DebugPrint);
+	sm64_global_init(RomData.GetData(),  TextureData.GetData());
 
 	ROMTexture = UTexture2D::CreateTransient(ATLAS_WIDTH, ATLAS_HEIGHT, PF_R8G8B8A8, FName("T_MarioAtlas"));
 	ROMTexture->MipGenSettings = TMGS_NoMipmaps;

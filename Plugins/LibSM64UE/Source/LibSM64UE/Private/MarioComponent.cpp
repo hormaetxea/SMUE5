@@ -13,10 +13,10 @@ SM64MarioInputs ConvertToSM64Struct(FSM64MarioInputs inputs)
 	inputs.Stick.Normalize();
 
 	return SM64MarioInputs{
-		Forward.X,
-		Forward.Y,
-		inputs.Stick.Y,
-		-inputs.Stick.X,
+		static_cast<float>(Forward.X),
+		static_cast<float>(Forward.Y),
+		static_cast<float>(inputs.Stick.Y),
+		static_cast<float>(-inputs.Stick.X),
 		inputs.ButtonA,
 		inputs.ButtonB,
 		inputs.ButtonZ

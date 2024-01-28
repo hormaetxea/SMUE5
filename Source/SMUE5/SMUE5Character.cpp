@@ -24,8 +24,11 @@ void ASMUE5Character::Tick(float DeltaSeconds)
 
 	if(Timer > 0)
 	{
-		Timer = -(1.0f / 30.0f);
-		Mario->TickMario(Inputs);
+		while (Timer > 0)
+		{
+			Timer -= (1.0f / 30.0f);
+			Mario->TickMario(Inputs);
+		}
 		
 		PMesh.bEnableCollision = false;
 		PMesh.bSectionVisible = true;

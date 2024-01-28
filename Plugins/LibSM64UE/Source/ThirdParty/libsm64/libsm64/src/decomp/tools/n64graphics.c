@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// #include <strings.h> ??? this does nothing
 
 #define STBI_NO_LINEAR
 #define STBI_NO_HDR
